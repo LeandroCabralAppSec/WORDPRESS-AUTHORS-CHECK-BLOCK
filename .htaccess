@@ -1,0 +1,7 @@
+# BLOQUEO DE VERIFICAÇÃO DE AUTORES DO WORDPRESS #
+# WORDPRESS AUTHORS CHECK BLOCK #
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} (author=\d+) [NC]
+RewriteRule .* - [F]
